@@ -26,7 +26,7 @@ class MySpider(CrawlSpider):
     name = "extract"
     target_domains = ["example.com"] # list of domains that will be allowed to be crawled
     start_urls = ["https://www.example.com/",] # list of starting urls for the crawler
-    base_url = 'https://www.tansel.com.au/'
+    base_url = 'https://www.example.com/'
     handle_httpstatus_list = [404,410,301,500,501,503] # only 200 by default. you can add more status to list
 
     # Throttle crawl speed to prevent hitting site too hard
